@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK FLIX</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="">
+</head>
+<style>
+  /* 커스텀 CSS를 여기에 추가 */
+  .carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .book-item img {
+    width: 100%;
+  }
+
+  .book-item {
+    width: 15rem;
+    margin: 1rem;
+  }
+</style>
+<body>
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">대가리</a>
+  </div>
+</nav>
+
+<!-- 페이지 콘텐츠 -->
+<div class="container">
+  <!-- 캐러셀(슬라이더) -->
+  <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <!-- 이 부분은 슬라이더의 목록을 표시합니다 -->
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- 각 슬라이더 아이템은 하나의 배너를 표현합니다 -->
+      <div class="carousel-item active" style="background-image: url('https://via.placeholder.com/800')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>첫 번째 슬라이드</h3>
+          <p>첫 번째 슬라이드 내용</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://via.placeholder.com/800')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>두 번째 슬라이드</h3>
+          <p>두 번째 슬라이드 내용</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://via.placeholder.com/800')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>세 번째 슬라이드</h3>
+          <p>세 번째 슬라이드 내용</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 이전/다음 버튼 -->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">이전</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">다음</span>
+    </a>
+  </div>
+
+
+
+  <!-- 책 그리드 -->
+  <div class="container">
+    <div class="row">
+      <!-- 첫 번째 세로 줄 -->
+      <div class="col-md-4">
+        <!-- 첫 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 두 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 세 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 두 번째 세로 줄 -->
+      <div class="col-md-4">
+        <!-- 첫 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 두 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 세 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 세 번째 세로 줄 -->
+      <div class="col-md-4">
+        <!-- 첫 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 두 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+        <!-- 세 번째 카드 -->
+        <div class="book-item">
+          <div style="display: flex; align-items: center;">
+            <div>
+              <img src="https://img.ridicdn.net/cover/4766000067/small#1" alt="상수리나무 아래">
+            </div>
+            <div style="margin: 0 20px;">
+              <h2>Rank: 1</h2>
+            </div>
+            <div>
+              <a href="/books/4766000001?_rdt_sid=webtoon_recommendation_reading_book&amp;_rdt_idx=0">Title: 상수리나무 아래</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--    요일별 웹툰 -->
+
+  <h1>요일별 웹툰</h1>
+
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">책 제목</a>
+            </h4>
+            <p class="card-text">책 설명</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">책 제목</a>
+            </h4>
+            <p class="card-text">책 설명</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">책 제목</a>
+            </h4>
+            <p class="card-text">책 설명</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">책 제목</a>
+            </h4>
+            <p class="card-text">책 설명</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">책 제목</a>
+            </h4>
+            <p class="card-text">책 설명</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">책 제목</a>
+              </h4>
+              <p class="card-text">책 설명</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">책 제목</a>
+              </h4>
+              <p class="card-text">책 설명</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">책 제목</a>
+              </h4>
+              <p class="card-text">책 설명</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">책 제목</a>
+              </h4>
+              <p class="card-text">책 설명</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 book-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">책 제목</a>
+              </h4>
+              <p class="card-text">책 설명</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 결과 페이지</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    .search-result {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 0;
+    }
+    .search-result:last-child {
+      border-bottom: none;
+    }
+    .result-title {
+      font-size: 18px;
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    .result-url {
+      color: #006621;
+      font-size: 14px;
+    }
+    .result-description {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- 검색창 -->
+  <div class="search-bar d-flex justify-content-center mb-3">
+    <input type="text" class="form-control w-100" placeholder="검색..." id="searchInput">
+  </div>
+
+  <!-- 저자 검색 결과 -->
+  <h5>"검색어" 검색 결과</h5>
+  <div class="search-result">
+    <a href="#" class="result-title">저자 이름</a><br>
+    <div class="result-description">저자에 대한 간략한 설명...</div>
+  </div>
+
+  <!-- 책 검색 결과 -->
+  <h5>"검색어" 책 검색 결과</h5>
+  <div class="search-result">
+    <a href="#" class="result-title">책 제목 1</a><br>
+    <div class="result-url">www.example1.com</div>
+    <div class="result-description">책에 대한 간략한 설명 1...</div>
+  </div>
+  <div class="search-result">
+    <a href="#" class="result-title">책 제목 2</a><br>
+    <div class="result-url">www.example2.com</div>
+    <div class="result-description">책에 대한 간략한 설명 2...</div>
+  </div>
+  <!-- 추가적인 검색 결과를 여기에 표시... -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

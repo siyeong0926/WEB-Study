@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>책 검색 페이지</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- 검색 목록 -->
+  <div class="row mb-4 search-bar">
+    <input type="text" class="form-control search-input" placeholder="검색">
+    <button class="btn btn-outline-secondary">장바구니</button>
+    <button class="btn btn-outline-primary ml-2">메뉴</button>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-6">
+    <!-- 이미지 및 상세 정보 -->
+    <div class="col-md-6">
+      <div class="book-image mb-4">
+        <img src="path_to_image.jpg" alt="책 이미지" class="img-fluid">
+      </div>
+    </div>
+      <!-- 전체선택, 소장하기 및 체크박스와 보기 소장 버튼들 -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <input type="checkbox" class="episode" value="all"> 전체선택
+        </div>
+        <div class="col-md-4 text-right">
+          <button class="btn btn-secondary">소장하기</button>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <input type="checkbox" class="episode" value="ep.1"> ep.1
+        </div>
+        <div class="col-md-4 text-right">
+          <button class="btn btn-success">보기</button>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <input type="checkbox" class="episode" value="ep.2"> ep.2
+        </div>
+        <div class="col-md-4 text-right">
+          <button class="btn btn-info">소장</button>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <input type="checkbox" class="episode" value="ep.3"> ep.3
+        </div>
+      </div>
+
+      <div class="white-box p-4">
+        <hr>
+        <!-- 작품 소개 섹션 -->
+        <h4>작품소개</h4>
+        <p>여기에 작품에 대한 소개 내용을 넣어주세요.</p>
+        <hr>
+        <!-- 저자 섹션 -->
+        <h4>저자</h4>
+        <p>저자에 대한 정보나 소개를 여기에 넣어주세요.</p>
+        <hr>
+        <!-- 리뷰 섹션 -->
+        <h4>리뷰</h4>
+        <label for="rating"></label>
+        <link href="/assets/css/star.css" rel="stylesheet"/>
+
+        <form class="mb-3" name="myform" id="myform" method="post">
+          <fieldset>
+            <span class="text-bold">별점을 선택해주세요</span>
+            <input type="radio" name="reviewStar" value="5" id="rate1"><label
+                  for="rate1">★</label>
+            <input type="radio" name="reviewStar" value="4" id="rate2"><label
+                  for="rate2">★</label>
+            <input type="radio" name="reviewStar" value="3" id="rate3"><label
+                  for="rate3">★</label>
+            <input type="radio" name="reviewStar" value="2" id="rate4"><label
+                  for="rate4">★</label>
+            <input type="radio" name="reviewStar" value="1" id="rate5"><label
+                  for="rate5">★</label>
+          </fieldset>
+          <div>
+		<textarea class="col-auto form-control" type="text" id="reviewContents"
+                  placeholder="리뷰를 남겨주세요"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="divider"></div> <!-- 여기에 구분선을 추가합니다. -->
+    <!-- 베스트 목록 -->
+    <div class="col-md-6">
+      <h5>베스트</h5>
+      <ul class="book-list">
+        <li><span class="ranking">1</span> 명문고 ex급 조연의 이야기</li>
+        <li><span class="ranking">2</span> 백작가의 망나니가 되었다</li>
+        <li><span class="ranking">3</span> 서브 남주가 파업하맨 생기는 일</li>
+        <li><span class="ranking">4</span> 블랙 기업 조선</li>
+        <li><span class="ranking">5</span> 환생 했더니 단종의 보모!?</li>
+        <li><span class="ranking">6</span> 흑막이지만 세계 평화가 좋다</li>
+        <li><span class="ranking">7</span> 저승의 왕위를 계승했다</li>
+        <li><span class="ranking">8</span> 히든 피스로 전설 기사</li>
+        <li><span class="ranking">9</span> 회귀자 사용설명서</li>
+        <li><span class="ranking">10</span> 반려 쉘터 키우기</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
