@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gudi.biteBooks.orderMapper">
+	<select id="orderList" parameterType="java.util.HashMap" resultType="map">
+		SELECT b.b_title, b.b_author, b.b_thumbnail, e.ep_no, e.ep_rprice, e.ep_cprice, c.c_type
+		FROM orders o
+				 JOIN BOOK b ON o.B_NO = b.B_NO
+				 JOIN episode e ON o.EP_ID = e.EP_ID
+				 JOIN CART c ON c.c_no = o.c_no
+		WHERE o.M_ID = #{m_id}
+	</select>
+	<insert id="orderInsert" parameterType="list">
+		INSERT INTO orders (m_id, ep_id, b_no, c_no)
+		VALUES
+		<foreach collection="list" item="item" separator=",">
+			(#{item.m_id}, #{item.ep_id}, #{item.b_no}, #{item.c_no})
+		</foreach>
+	</insert>
+
+</mapper>

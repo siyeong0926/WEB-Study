@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gudi.biteBooks.cartMapper">
+	<select id="cartList" parameterType="java.util.HashMap" resultType="map">
+		SELECT c.m_id, b.b_no,b.b_title, b.b_author, b.b_thumbnail, e.ep_no, e.ep_rprice, e.ep_cprice, c_no, c_type, e.ep_id
+		FROM CART c
+		JOIN BOOK b ON c.B_NO = b.B_NO
+		JOIN episode e ON c.EP_ID = e.EP_ID
+		WHERE c.M_ID = 1
+		<choose>
+			<when test="tab == 'rental'">
+				AND c_type = '대여'
+			</when>
+			<when test="c_no != null">
+				AND c_no IN (2,4)
+			</when>
+			<otherwise>
+				AND c_type = '소장'
+			</otherwise>
+		</choose>
+	</select>
+</mapper>

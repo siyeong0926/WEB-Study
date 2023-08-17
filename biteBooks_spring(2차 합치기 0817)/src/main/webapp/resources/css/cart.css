@@ -1,0 +1,123 @@
+
+
+.cart-left{
+    height: 100%;
+    width:40%;
+}
+
+.cart-content{
+    margin-top: 10%;
+    border: 1px rgb(170, 170, 170) solid;
+}
+.cart-table{
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+.cart-check{
+    font-size: small;
+}
+
+.check-all{
+    margin-top: 10px;
+}
+.check-option>input{
+    margin-top: 50%;
+}
+.text-writer{
+    font-size: small;
+}
+.cart-cost{
+    padding-top: 25%;
+    text-align: right;
+}
+.cart-product{
+    padding-top: 5px;
+}
+.cart-tab{
+    display: flex;
+  }
+.cart-tab>div{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-tab a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+.cart-thumbnail{
+    width: 80px;
+    height: 110px;
+}
+/* ----오른쪽 구획 시작---- */
+.cart-right{
+    height: 100%;
+    width: 30%;
+    margin-left: 20px;
+
+}
+.cart-pay{
+    height: 400px;
+    width: 70%;
+    margin-top: 22%;
+}
+.pay-cost{
+    height: 60%;
+    border: 1px solid #2679ff;
+    position: relative;
+
+}
+.pay-quantity{
+    padding-top: 10%;
+    font-size: 13px;
+}
+.pay-quantity-align{
+    display: flex;
+    justify-content: space-between;
+}
+.pay-quantity>div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.pay-total{
+    height: 30%;
+    width: 100%;
+    background-color: #deeaff;
+    position: absolute;
+    bottom: 0;
+    }
+.total-content{
+    display: flex; 
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+.button-container{
+    height: 60px;
+    margin-top: 15px;
+}
+.pay-button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #2679ff;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.white-button{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:white;
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 10px;
+}

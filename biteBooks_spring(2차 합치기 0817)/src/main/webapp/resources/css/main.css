@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    height: 2000px;
+    background-color: #ffffff;
+}
+
+.a-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.a-hover li{
+    list-style-type: none;
+    padding: 0;
+    height: 70px;
+    width:70px;
+    margin-right: 25px;
+    background-color: rgb(149, 193, 255);
+    border-radius: 50%;
+    color: white;
+    font-size: small;
+    display: flex;
+}
+.a-hover li:hover{
+    background-color: #2679ff;
+}
+.a-hover a{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    margin-left: 100px;
+    width: auto;
+    height: auto;
+}
+
+.card {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menu {
+    z-index: 1;
+    text-align: center;
+}
+
+.main-section {
+    height: 100vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/639dc769-9b05-4627-a596-0a46965d0e43/KR-ko-20230612-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.main-section:before {
+    content: '';
+    background: linear-gradient(to top, rgb(255, 255, 255), transparent);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.row-container{
+    margin-left: -40px;
+}
+/*-------------------웹툰 월간 랭킹*/
+.month-rank img {
+    width: 100%;
+    border-radius: 4px;
+}
+.month-rank {
+    width: 16rem;
+    margin: 1rem;
+}
+.rank-image{
+    width: 40%;
+}
+.rank-num{
+    margin: 0 20px;
+    width: 10%;
+}
+.rank-info{
+    width: 50%;
+}
+/*-------------------웹툰 월간 랭킹 끝*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

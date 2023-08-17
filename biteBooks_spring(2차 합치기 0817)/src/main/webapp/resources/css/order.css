@@ -1,0 +1,104 @@
+
+
+.order-left{
+    height: 100%;
+    width:40%;
+    margin-top: 10%;
+}
+.order-table-head{
+    margin-bottom: -10px;
+}
+.order-thumbnail{
+    width: 80px;
+    height: 110px;
+}
+.order-contnet{
+    margin-top: 10px;
+}
+.content-writer-price{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+/* ----오른쪽 구획 시작---- */
+.order-right{
+    height: 100%;
+    width: 30%;
+    margin-top: 10%;
+}
+.pay-table{
+    border: 1px solid #2679ff;
+    width: 80%;
+
+}
+.pay-table th{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.total-price-head p{
+    margin-top: 3px;
+    margin-bottom: -3px
+}
+.total-price-foot{
+    height: 60px;
+    display: flex;
+    background-color: #deeaff;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.total-price-foot p{
+    font-size: 14px;
+}
+
+.payment-method {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+
+}
+
+.payment-method label {
+    display: block;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 5px;
+}
+
+.pay-agreement{
+    margin-top: 20px;
+    width: 80%;
+}
+.pay-agreement h6{
+    font-weight: 600;
+}
+
+.pay-agreement input[type=checkbox]{
+    margin-top: 10px;
+}
+.pay-agreement label{
+    margin-bottom: 10px;
+}
+.checkout-button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.checkout-button button{
+    width:90%;
+    height: 50px;
+    border: none;
+    background-color:#2679ff; 
+    border-radius: 4px;
+    color: #ffffff; 
+}
+.agreement-li li{
+    color: gray;
+    font-size: 12px;
+    list-style-type:disc;
+    margin-left: 20px;
+}
